@@ -222,8 +222,49 @@ Organisation du projet :
 ```text
 reservation-de-salles/
 │
-├── LICENSE                 # License du projet
-└── README.md               # Vous le lisez actuellement
+├── assets/                 # Ressources frontend (JS, CSS, Stimulus)
+│   ├── controllers/         # Contrôleurs Stimulus
+│   └── styles/              # Feuilles de style
+│
+├── bin/                    # Commandes Symfony et PHPUnit
+├── config/                 # Configuration de l'application
+│   ├── packages/            # Configuration des bundles
+│   └── routes/              # Définition des routes
+
+├── docker/                 # Configuration des conteneurs Docker
+│   ├── nginx/               # Configuration du serveur web Nginx
+│   └── php/                 # Configuration PHP
+│
+├── migrations/             # Migrations de la base de données Doctrine
+├── public/                 # Répertoire accessible depuis le navigateur
+├── src/                    # Code source de l'application
+│   ├── Controller/          # Contrôleurs
+│   ├── Entity/              # Entités Doctrine
+│   └── Repository/          # Requêtes et repositories Doctrine
+│
+├── templates/              # Templates Twig
+├── tests/                  # Tests automatisés
+├── translations/           # Fichiers de traduction
+├── var/                    # Fichiers générés par Symfony
+│   ├── cache/               # Cache de l'application
+│   ├── log/                 # Journaux de l'application
+│   └── share/               # Données partagées
+│
+├── vendor/                 # Dépendances installées par Composer
+│
+├── .env                    # Variables d'environnement par défaut de l'application
+├── .env.dev                # Variables d'environnement spécifiques à l'environnement de développement
+├── .env.test               # Variables d'environnement spécifiques à l'environnement de test
+├── AGENTS.md               # Instructions et consignes destinées aux agents de développement
+├── compose.yaml            # Configuration principale des services Docker Compose
+├── compose.override.yaml   # Surcharges locales Docker Compose
+├── composer.json           # Dépendances et configuration Composer
+├── composer.lock           # Versions verrouillées des dépendances
+├── importmap.php           # Configuration des imports JavaScript
+├── LICENSE                 # Licence du projet
+├── phpunit.dist.xml        # Configuration PHPUnit
+├── README.md               # Documentation du projet
+└── symfony.lock            # Versions des recettes Symfony installées
 ```
 
 *Cette arborescence pourra évoluer au cours du développement.*
